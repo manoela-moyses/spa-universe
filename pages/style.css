@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10.2rem;
+  height: 100%;
+  margin-top: -6rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -12rem;
+  height: 100vh;
+}
+
+.img-1 {
+  background-image: url(../assets/mountains-universe-1.png);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.img-2 {
+  background-image: url(../assets/mountains-universe02.png);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.img-3 {
+  background-image: url(../assets/mountains-universe-3.png);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+nav {
+  padding: 4rem 7.2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #c4c4cc;
+  font-size: 2.4rem;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+h1 {
+  color: #e1e1e6;
+  font-weight: bold;
+  font-size: 4.8rem;
+  line-height: 125%;
+  margin-bottom: 2.4rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 160%;
+  color: #e1e1e6;
+}
+
+.button {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1.2rem 3.2rem;
+  border: 0.2rem solid #ffffff;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #02799d;
+}
+
+@media (max-width: 768px) {
+  .content {
+    height: 100%;
+    padding: 0 5.1rem;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 598px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  nav {
+    padding: 3rem auto;
+    gap: 1.6rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+  }
+
+  nav img {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .content {
+    padding: 0 2rem;
+  }
+}
